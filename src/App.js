@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Router from './route/Router';
+
+// base framework
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+// third party
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+import '../node_modules/@fortawesome/fontawesome-free/css/v4-shims.min.css';
+import '../node_modules/animate.css/animate.min.css';
+import '../node_modules/swiper/js/swiper';
+import '../node_modules/swiper/css/swiper.min.css';
+
+// base framework
+import 'jquery';
+import 'bootstrap';
+
+// Custom css
+import './assets/scss/style.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router />
   );
 }
 

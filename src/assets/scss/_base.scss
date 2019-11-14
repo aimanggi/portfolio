@@ -1,0 +1,50 @@
+button {
+    border: 0;
+    background: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+div {
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    color: $dark;
+    cursor: pointer;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: $dark;
+
+    @media (max-width: $sm) {
+        font-size: 14px;
+      }
+}

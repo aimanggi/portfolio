@@ -1,0 +1,21 @@
+.home {
+    height: 100vh;
+    background-color: $primary;
+    color: #fff;
+
+    .home-shadow {
+        font-family: 'Libre Franklin', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        font-weight: 900;
+        font-size: 100px;
+        line-height: 121px;
+        color: #32374B;
+
+        img {
+            margin-top: 30%;
+        }
+    }
+}
