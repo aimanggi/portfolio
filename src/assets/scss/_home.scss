@@ -1,6 +1,6 @@
 .home {
     height: 100vh;
-    background-color: $primary;
+    background-color: #ffffff;
     color: #fff;
 
     .home-shadow {
@@ -9,13 +9,27 @@
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        font-weight: 900;
-        font-size: 100px;
-        line-height: 121px;
-        color: #32374B;
+        
 
-        img {
-            margin-top: 30%;
+        .home-title {
+            font-weight: 900;
+            font-size: 42px;
+            color: #32374B;
         }
+
     }
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .home-more {
+        position: relative;
+        bottom: 0;
+        color: #32374B;
+     }
 }
