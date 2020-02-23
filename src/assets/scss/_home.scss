@@ -1,30 +1,49 @@
 .home {
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #2D3142;
     color: #fff;
+    border-bottom: 16px solid #D86837;
+
+    .container {
+        height: 100%;
+    }
 
     .home-shadow {
-        font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Nunito', sans-serif;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
+        padding: 4em 0;
+        height: 100%;
         
-
         .home-title {
-            font-weight: 900;
-            font-size: 42px;
-            color: #32374B;
+            &__name {
+                color: #D86837;
+                font-weight: 900;
+                font-size: 42px;
+            }
+
+            &__occupation {
+                @include outline-text(#2D3142, #fff);
+                font-size: 56px;
+                font-family: 'Libre Franklin';
+                font-weight: 900;  
+                
+                @media (min-width: $md) {
+                    font-size: 72px;
+
+                }
+            }
         }
 
     }
 
     &-link {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
+       
+        a {
+            margin-right: 2em;
+        }
     }
 
     .home-more {
@@ -32,4 +51,47 @@
         bottom: 0;
         color: #32374B;
      }
+}
+
+.porto {
+    font-family: 'Nunito', sans-serif;
+
+    &-header {
+        height: 72px;
+        background-color: #D86837;
+        color: #fff;
+        font-size: 32px;
+    }
+
+    &-content {
+        padding: 2em 0;
+
+        &__image {
+            max-width: 100%;
+            margin-bottom: 24px;
+        }
+
+        &__separator {
+            border: 1px solid #BFC0C0;
+            border-radius: 2px;
+            padding: 16px;
+        }
+
+        &__fluid {
+            flex-wrap: wrap;
+            -moz-column-width: 25em;
+            -webkit-column-width: 25em;
+            -moz-column-gap: 0.5em;
+            -webkit-column-gap: 0.5em;
+            column-gap: 0.5em;
+            column-width: 25em;
+        }
+
+        &__card {
+            display: inline-block;
+            margin: 0.25rem;
+            padding: 1rem;
+            width: 100%;
+        }
+    }
 }

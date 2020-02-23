@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import LogoShadow from "../assets/img/AM-logo-shadow.svg";
+import linkedin from "../assets/img/linkedin.svg";
+import github from "../assets/img/github.svg";
+import codepen from "../assets/img/codepen.svg";
+import instagram from "../assets/img/instagram.svg";
 
 class Home extends Component {
   render() {
@@ -8,25 +12,46 @@ class Home extends Component {
         <div className="container">
           <div className="home-shadow">
             <div>
-            <img src={LogoShadow} alt="logo" />
+              Hello, I'm
             </div>
-
-            <div className="home-title">
+            <div className="home-title__name">
               <p>ANGGI MAULINDA</p>
             </div>
-            <div className="home-title">
-              <p>Front-end Developer, Graphic Designer</p>
+            <div className="home-title__occupation">
+              <div>Front-end Developer,</div>
+              <div>Graphic Designer</div>
             </div>
 
             <div className="home-link">
+              <a
+                href="https://id.linkedin.com/in/anggi-maulinda"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src={linkedin} alt="linkedin" />
+              </a>
               <a
                 href="https://github.com/aimanggi"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Github
+                <img src={github} alt="github" />
               </a>
               <a
+                href="https://codepen.io/aimanggi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src={codepen} alt="codepen" />
+              </a>
+              <a
+                href="https://instagram.com/aimanggi"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img src={instagram} alt="instagram" />
+              </a>
+              {/* <a
                 href="https://lovenest.com.sg"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -39,10 +64,12 @@ class Home extends Component {
                 target="_blank"
               >
                 Project Portfolio
-              </a>
+              </a>*/}
+             </div> 
+            <div className="home-more">More content in progress.</div> 
+            <div className="d-flex justify-content-center">
+            <img src={LogoShadow} alt="logo" />
             </div>
-            <div className="home-more">More content in progress.</div>
-            
           </div>
         </div>
       </div>
