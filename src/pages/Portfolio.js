@@ -12,7 +12,7 @@ class Portfolio extends Component {
           <div className="porto-content__fluid">
             {portfolio.map((data, i) => {
               return (
-                <div key={i} className="porto-content__card" >
+                <div key={i} className="porto-content__card">
                   {/* <div>
                     <img
                       className="porto-content__image"
@@ -21,8 +21,17 @@ class Portfolio extends Component {
                     />
                   </div> */}
                   <div className="porto-content__separator">
-                    <a href={data.url || '#portfolio'} className="title__content">{data.name}</a>
-                    <div className="mb-2" style={{color: '#BFC0C0'}}>{data.project}</div>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={data.url || "#portfolio"}
+                      className="title__content"
+                    >
+                      {data.name}
+                    </a>
+                    <div className="mb-2" style={{ color: "#BFC0C0" }}>
+                      {data.project}
+                    </div>
                     <div>{data.summary}</div>
                   </div>
                 </div>

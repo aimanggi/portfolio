@@ -35,7 +35,7 @@ const portfolio = [
   {
     name: "First Commercial Website",
     image: portfolio2,
-    project: "Love Nest",
+    project: "Webisite for Bridal Industry Company",
     technologies: ["ReactJs", "REST API", "Heroku"],
     summary: "Build website for a bridal industry company in Singapore. I am as Frontend Developer in this team responsible to deliver website according client requirement. Working closely with UI/UX Desiginer to ensure this product having good functionality and design",
     url:"https://lovenest.com.sg",
