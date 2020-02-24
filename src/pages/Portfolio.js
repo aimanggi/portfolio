@@ -21,6 +21,13 @@ class Portfolio extends Component {
                     />
                   </div> */}
                   <div className="porto-content__separator">
+                     <div>
+                    <img
+                      className="porto-content__image"
+                      src={data.image}
+                      alt={data.name}
+                    />
+                  </div>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
