@@ -6,11 +6,14 @@ class Portfolio extends Component {
     return (
       <section className="porto">
         <div className="porto-header">
-          <div className="container">PORTFOLIO</div>
+          <div className="container">
+            <div>PORTFOLIO</div>
+            <div className="subtitle">Web Development</div>
+          </div>
         </div>
         <div className="container porto-content">
           <div className="porto-content__fluid">
-            {portfolio.map((data, i) => {
+            {portfolio.web.map((data, i) => {
               return (
                 <div key={i} className="porto-content__card">
                   {/* <div>
@@ -21,13 +24,58 @@ class Portfolio extends Component {
                     />
                   </div> */}
                   <div className="porto-content__separator">
-                     <div>
+                    <div>
+                      <img
+                        className="porto-content__image"
+                        src={data.image}
+                        alt={data.name}
+                      />
+                    </div>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={data.url || "#portfolio"}
+                      className="title__content"
+                    >
+                      {data.name}
+                    </a>
+                    <div className="mb-2" style={{ color: "#BFC0C0" }}>
+                      {data.project}
+                    </div>
+                    <div>{data.summary}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="porto-header">
+          <div className="container">
+            <div>PORTFOLIO</div>
+            <div className="subtitle">UX Design</div>
+          </div>
+        </div>
+        <div className="container porto-content">
+          <div className="porto-content__fluid">
+            {portfolio.design.map((data, i) => {
+              return (
+                <div key={i} className="porto-content__card">
+                  {/* <div>
                     <img
                       className="porto-content__image"
                       src={data.image}
                       alt={data.name}
                     />
-                  </div>
+                  </div> */}
+                  <div className="porto-content__separator">
+                    <div>
+                      <img
+                        className="porto-content__image"
+                        src={data.image}
+                        alt={data.name}
+                      />
+                    </div>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"

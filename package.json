@@ -1,6 +1,6 @@
 {
   "name": "anggi-portfolio",
-  "homepage": "https://myusername.github.io",
+  "homepage": "https://aimanggi.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,7 @@
     "feather-icons": "^4.24.1",
     "gh-pages": "^2.2.0",
     "jquery": "^3.4.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

@@ -11,15 +11,13 @@ class Home extends Component {
       <div className="home">
         <div className="container">
           <div className="home-shadow">
-            <div>
-              Hello, I'm
-            </div>
+            <div>Hello, I'm</div>
             <div className="home-title__name">
               <p>ANGGI MAULINDA</p>
             </div>
             <div className="home-title__occupation">
               <div>Front-end Developer,</div>
-              <div>Graphic Designer</div>
+              <div>UI/UX Enthusiast</div>
             </div>
 
             <div className="home-link">
@@ -65,10 +63,9 @@ class Home extends Component {
               >
                 Project Portfolio
               </a>*/}
-             </div> 
-            <div className="home-more">More content in progress.</div> 
+            </div>
             <div className="d-flex justify-content-center">
-            <img src={LogoShadow} alt="logo" />
+              <img src={LogoShadow} alt="logo" />
             </div>
           </div>
         </div>

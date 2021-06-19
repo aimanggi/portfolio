@@ -1,109 +1,113 @@
 .home {
-    height: 100vh;
-    background-color: #2D3142;
-    color: #fff;
-    border-bottom: 16px solid #D86837;
+  height: 100vh;
+  background-color: #2d3142;
+  color: #fff;
+  border-bottom: 16px solid #d86837;
 
-    .container {
-        height: 100%;
-    }
+  .container {
+    height: 100%;
+  }
 
-    .home-shadow {
-        font-family: 'Nunito', sans-serif;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4em 0;
-        height: 100%;
-        
-        .home-title {
-            &__name {
-                color: #D86837;
-                font-weight: 900;
-                font-size: 32px;
-                @media (min-width: $md) {
-                    font-size: 42px;
-                }
-            }
+  .home-shadow {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em 0;
+    height: 100%;
 
-            &__occupation {
-                @include outline-text(#2D3142, #fff);
-                font-size: 32px;
-                font-family: 'Libre Franklin';
-                font-weight: 900;  
-                margin-bottom: 16px;
-                
-                @media (min-width: $md) {
-                    font-size: 72px;
-                }
-            }
+    .home-title {
+      &__name {
+        color: #d86837;
+        font-weight: 900;
+        font-size: 32px;
+        @media (min-width: $md) {
+          font-size: 42px;
         }
+      }
 
-    }
+      &__occupation {
+        @include outline-text(#2d3142, #fff);
+        font-size: 32px;
+        font-family: "Libre Franklin";
+        font-weight: 900;
+        margin-bottom: 16px;
 
-    &-link {
-        display: flex;
-       
-        a {
-            margin-right: 2em;
-
-            img {
-                width: 24px;
-                height: 24px;
-                @media (min-width: $md) {
-                    width: 33px;
-                    height: 33px;
-                }
-            }
+        @media (min-width: $md) {
+          font-size: 72px;
         }
+      }
     }
+  }
 
-    .home-more {
-        position: relative;
-        bottom: 0;
-        color: #32374B;
-     }
+  &-link {
+    display: flex;
+
+    a {
+      margin-right: 2em;
+
+      img {
+        width: 24px;
+        height: 24px;
+        @media (min-width: $md) {
+          width: 33px;
+          height: 33px;
+        }
+      }
+    }
+  }
+
+  .home-more {
+    position: relative;
+    bottom: 0;
+    color: #32374b;
+  }
 }
 
 .porto {
-    font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 
-    &-header {
-        height: 72px;
-        background-color: #D86837;
-        color: #fff;
-        font-size: 32px;
+  &-header {
+    // height: 72px;
+    background-color: #d86837;
+    color: #fff;
+    font-size: 24px;
+    padding: 12px 0px 24px;
+
+    .subtitle {
+      font-size: 14px;
+    }
+  }
+
+  &-content {
+    padding: 2em 0;
+
+    &__image {
+      max-width: 100%;
+      margin-bottom: 24px;
     }
 
-    &-content {
-        padding: 2em 0;
-
-        &__image {
-            max-width: 100%;
-            margin-bottom: 24px;
-        }
-
-        &__separator {
-            border: 1px solid #BFC0C0;
-            border-radius: 2px;
-            padding: 16px;
-        }
-
-        &__fluid {
-            flex-wrap: wrap;
-            -moz-column-width: 25em;
-            -webkit-column-width: 25em;
-            -moz-column-gap: 0.5em;
-            -webkit-column-gap: 0.5em;
-            column-gap: 0.5em;
-            column-width: 25em;
-        }
-
-        &__card {
-            display: inline-block;
-            margin: 0.25rem;
-            padding: 1rem;
-            width: 100%;
-        }
+    &__separator {
+      border: 1px solid #bfc0c0;
+      border-radius: 2px;
+      padding: 16px;
     }
+
+    &__fluid {
+      flex-wrap: wrap;
+      -moz-column-width: 25em;
+      -webkit-column-width: 25em;
+      -moz-column-gap: 0.5em;
+      -webkit-column-gap: 0.5em;
+      column-gap: 0.5em;
+      column-width: 25em;
+    }
+
+    &__card {
+      display: inline-block;
+      margin: 0.25rem;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
 }
