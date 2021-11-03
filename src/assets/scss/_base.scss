@@ -1,71 +1,64 @@
 button {
-    border: 0;
-    background: none;
+  border: 0;
+  background: none;
 
-    &:focus {
-        outline: 0;
-    }
+  &:focus {
+    outline: 0;
+  }
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 div {
-    &:focus {
-        outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
+  color: $dark;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
     color: $dark;
-    cursor: pointer;
-
-    &:focus {
-        outline: 0;
-    }
-
-    &:hover {
-        color: $dark;
-        text-decoration: underline;
-    }
+    text-decoration: underline;
+  }
 }
 
 input,
 textarea {
-    &:focus {
-        outline: 0;
-    }
+  &:focus {
+    outline: 0;
+  }
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: $dark;
+  font-family: "Raleway", sans-serif;
+  color: $dark;
 
-    @media (max-width: $sm) {
-        font-size: 14px;
-      }
+  @media (max-width: $sm) {
+    font-size: 14px;
+  }
 }
 
 @mixin outline-text($inner-color, $outline-color) {
-    color: $inner-color;
-    text-shadow:
-      -1px -1px 0 $outline-color,
-       0   -1px 0 $outline-color,
-       1px -1px 0 $outline-color,
-       1px  0   0 $outline-color,
-       1px  1px 0 $outline-color,
-       0    1px 0 $outline-color,
-      -1px  1px 0 $outline-color,
-      -1px  0   0 $outline-color;
-  
-  }
+  color: $inner-color;
+  text-shadow: -1px -1px 0 $outline-color, 0 -1px 0 $outline-color,
+    1px -1px 0 $outline-color, 1px 0 0 $outline-color, 1px 1px 0 $outline-color,
+    0 1px 0 $outline-color, -1px 1px 0 $outline-color, -1px 0 0 $outline-color;
+}
 
-  .title {
-      &__content {
-        font-size: 24px;
-        font-weight: 700;
-      }
+.title {
+  &__content {
+    font-size: 24px;
+    font-weight: 700;
   }
+}
